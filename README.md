@@ -2,82 +2,190 @@
 
 A modern, responsive cryptocurrency dashboard built with React and Vite. Track real-time prices, view detailed coin analytics, and explore crypto news and features—all in one place.
 
-## Features
+## 🌟 Features
 
-- 🚀 Live crypto prices and market data
+- 🚀 Live crypto prices and market data (powered by CoinGecko API)
 - 📈 Interactive price charts (powered by Victory)
-- 🔍 Search and filter coins
+- 🔍 Search and filter cryptocurrencies
 - 💱 Multi-currency support (USD, EUR, INR)
-- 📰 Blog and educational resources
+- 📰 Educational blog with crypto guides
 - 💡 Feature updates and announcements
-- 💰 Pricing plans (coming soon)
-- 🌙 Modern, glassmorphic UI with dark theme
-- 📱 Fully responsive for mobile and desktop
+- 💰 Pricing page with sample plans
+- 🌙 Modern glassmorphic UI with dark theme
+- 📱 Fully responsive design for mobile and desktop
 
-## Pages
+## 📄 Pages
 
-- **Home:** Hero section, search, trending coins, and market overview
-- **Coin:** Detailed coin analytics, chart, and info
-- **Pricing:** User-focused plans (sample, coming soon)
-- **Blog:** Crypto news and beginner guides
-- **Features:** Updates and upcoming features
+- **Home:** Hero section, cryptocurrency search, trending coins, and market overview
+- **Coin:** Detailed coin analytics, interactive price chart, and key metrics
+- **Pricing:** User-focused pricing plans (coming soon)
+- **Blog:** Crypto news and beginner-friendly guides
+- **Features:** Updates and upcoming feature announcements
 
-## Getting Started
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 14+ and npm
+
+### Installation
 
 1. **Clone the repository:**
    ```sh
    git clone https://github.com/KaranUnique/CryptoHub.git
    cd CryptoHub
    ```
+
 2. **Install dependencies:**
    ```sh
    npm install
    ```
-3. **Start the development server:**
+
+3. **Set up environment variables:**
+   Create a `.env` file in the project root:
+   ```
+   VITE_CG_API_KEY=your-coingecko-api-key
+   ```
+   Get your free API key from [CoinGecko API](https://www.coingecko.com/en/api)
+
+4. **Start the development server:**
    ```sh
    npm run dev
    ```
-4. **Open in your browser:**
+
+5. **Open in your browser:**
    Visit [http://localhost:5173](http://localhost:5173)
 
-## Tech Stack
-
-- React 18
-- Vite
-- React Router DOM
-- Victory (charts)
-- CoinGecko API
-- Modern CSS (no Tailwind)
-
-## Folder Structure
-
-```
-Cryptoplace/
-  ├── public/
-  ├── src/
-  │   ├── assets/
-  │   ├── components/
-  │   ├── context/
-  │   ├── pages/
-  │   │   ├── Home/
-  │   │   ├── Coin/
-  │   │   ├── Pricing/
-  │   │   ├── Blog/
-  │   │   └── Features/
-  │   ├── App.jsx
-  │   └── main.jsx
-  ├── package.json
-  └── README.md
+### Build for Production
+```sh
+npm run build
 ```
 
-## API Key
+## 🛠️ Tech Stack
 
-This project uses a demo CoinGecko API key. For production, [get your own API key](https://www.coingecko.com/en/api).
+- **Frontend:** React 18, Vite
+- **Routing:** React Router DOM v6
+- **Charts:** Victory
+- **API:** CoinGecko (free)
+- **Styling:** Modern CSS (Glassmorphism, Gradients)
+- **Deployment:** Vercel
 
-## License
+## 📁 Project Structure
 
-MIT
+```
+CryptoHub/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   ├── arrow_icon.png
+│   │   ├── logo.png
+│   │   └── cryptologo.png
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   └── Navbar.css
+│   ├── context/
+│   │   └── CoinContext.jsx
+│   ├── pages/
+│   │   ├── Home/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Home.css
+│   │   │   └── Coin/
+│   │   │       ├── Coin.jsx
+│   │   │       └── Coin.css
+│   │   ├── Pricing/
+│   │   │   ├── Pricing.jsx
+│   │   │   └── Pricing.css
+│   │   ├── Blog/
+│   │   │   ├── Blog.jsx
+│   │   │   └── Blog.css
+│   │   └── Features/
+│   │       ├── Features.jsx
+│   │       └── Features.css
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── .env (local only, not in git)
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Whether you're fixing bugs, adding features, or improving documentation, your help is appreciated.
+
+### How to Contribute
+
+1. **Fork the repository** by clicking the "Fork" button at the top-right of this page
+2. **Clone your fork:**
+   ```sh
+   git clone https://github.com/your-username/CryptoHub.git
+   cd CryptoHub
+   ```
+3. **Create a new branch** for your feature or fix:
+   ```sh
+   git checkout -b feature/your-feature-name
+   ```
+4. **Make your changes** and test thoroughly
+5. **Commit your changes** with a clear message:
+   ```sh
+   git commit -m "Add your feature description"
+   ```
+6. **Push to your fork:**
+   ```sh
+   git push origin feature/your-feature-name
+   ```
+7. **Open a Pull Request** on the main repository with a clear description of your changes
+
+### Development Guidelines
+
+- Follow the existing code style and structure
+- Use meaningful variable and function names
+- Test your changes before submitting a PR
+- Update documentation if you add new features
+- Keep commits atomic and well-documented
+
+### Areas We're Looking For
+
+- Bug fixes and performance improvements
+- New features (e.g., more cryptocurrencies, additional metrics)
+- UI/UX enhancements
+- Documentation improvements
+- Blog content and educational resources
+- Accessibility improvements
+
+## 📋 Code of Conduct
+
+By participating in this project, you agree to maintain a respectful and inclusive environment for all contributors. Harassment, discrimination, or any form of abuse will not be tolerated.
+
+## 👨‍💼 Project Leadership
+
+- **Admin & Mentor:** KaranUnique
+
+Feel free to reach out to the admin for questions, guidance, or support.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔗 Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com) and sign in with GitHub
+3. Click "Add New Project" and import this repository
+4. Add environment variables in the Vercel dashboard:
+   - `VITE_CG_API_KEY`: Your CoinGecko API key
+5. Deploy and get your live URL!
+
+## 📞 Support & Contact
+
+For questions or issues, please:
+- Open an Issue on GitHub
+- Contact the admin: KaranUnique
 
 ---
 
-> Designed and developed by KaranUnique
+**Happy coding! 🚀 Together, let's build the future of crypto dashboards!**
