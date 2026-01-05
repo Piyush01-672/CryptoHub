@@ -111,6 +111,7 @@ function Navbar() {
             const currency = currencies.find(c => c.value === e.target.value);
             currencyHandler(currency);
           }}
+          value={selectedCurrency.value}
         >
           <option value="usd">USD</option>
           <option value="eur">EUR</option>
@@ -160,6 +161,31 @@ function Navbar() {
             </Link>
           ))}
         </ul>
+
+        <div className="mobile-controls">
+          <div className="mobile-control-item" onClick={toggleTheme}>
+            <span>Theme</span>
+            <div className={`toggle-track ${isDark ? "dark" : "light"}`}>
+              <div className="toggle-thumb"></div>
+            </div>
+          </div>
+
+          <div className="mobile-control-item">
+            <span>Currency</span>
+            <select
+              className="currency-select mobile"
+              onChange={(e) => {
+                const currency = currencies.find(c => c.value === e.target.value);
+                currencyHandler(currency);
+              }}
+              value={selectedCurrency.value}
+            >
+              <option value="usd">USD</option>
+              <option value="eur">EUR</option>
+              <option value="inr">INR</option>
+            </select>
+          </div>
+        </div>
 
         <div className="mobile-auth">
           {currentUser ? (
