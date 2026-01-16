@@ -9,7 +9,7 @@ import { notifyError, notifySuccess } from "../utils/notify";
 
 function Signup() {
   const navigate = useNavigate();
-  const { signup, currentUser } = useAuth();
+  const { signup, currentUser, loginWithGoogle } = useAuth();
 
   const [formData, setFormData] = useState({
     fullName: "",
